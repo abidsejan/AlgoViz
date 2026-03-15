@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router";
+import RootLayout from "./components/RootLayout";
 import Home from "./pages/Home";
 import LinearSearch from "./pages/searching/LinearSearch";
 import BinarySearch from "./pages/searching/BinarySearch";
@@ -37,143 +38,148 @@ import TreeTraversals from "./pages/trees/TreeTraversals";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    Component: Home,
-  },
-  {
-    path: "/linear-search",
-    Component: LinearSearch,
-  },
-  {
-    path: "/binary-search",
-    Component: BinarySearch,
-  },
-  {
-    path: "/ternary-search",
-    Component: TernarySearch,
-  },
-  {
-    path: "/jump-search",
-    Component: JumpSearch,
-  },
-  {
-    path: "/split-search",
-    Component: SplitSearch,
-  },
-  {
-    path: "/exponential-search",
-    Component: ExponentialSearch,
-  },
-  {
-    path: "/bubble-sort",
-    Component: BubbleSort,
-  },
-  {
-    path: "/selection-sort",
-    Component: SelectionSort,
-  },
-  {
-    path: "/insertion-sort",
-    Component: InsertionSort,
-  },
-  {
-    path: "/merge-sort",
-    Component: MergeSort,
-  },
-  {
-    path: "/quick-sort",
-    Component: QuickSort,
-  },
-  {
-    path: "/heap-sort",
-    Component: HeapSort,
-  },
-  {
-    path: "/counting-sort",
-    Component: CountingSort,
-  },
-  {
-    path: "/bfs",
-    Component: BFS,
-  },
-  {
-    path: "/dfs",
-    Component: DFS,
-  },
-  {
-    path: "/dijkstra",
-    Component: Dijkstra,
-  },
-  {
-    path: "/bellman-ford",
-    Component: BellmanFord,
-  },
-  {
-    path: "/prims",
-    Component: Prims,
-  },
-  {
-    path: "/kruskals",
-    Component: Kruskals,
-  },
-  {
-    path: "/topological-sort",
-    Component: TopologicalSort,
-  },
-  {
-    path: "/lcs",
-    Component: LCS,
-  },
-  {
-    path: "/mcm",
-    Component: MCM,
-  },
-  {
-    path: "/n-queen",
-    Component: NQueen,
-  },
-  {
-    path: "/knapsack",
-    Component: Knapsack,
-  },
-  {
-    path: "/lis",
-    Component: LIS,
-  },
-  {
-    path: "/coin-change",
-    Component: CoinChange,
-  },
-  {
-    path: "/stack",
-    Component: Stack,
-  },
-  {
-    path: "/queue",
-    Component: Queue,
-  },
-  {
-    path: "/circular-queue",
-    Component: CircularQueue,
-  },
-  {
-    path: "/linked-list",
-    Component: LinkedList,
-  },
-  {
-    path: "/bst",
-    Component: BST,
-  },
-  {
-    path: "/avl",
-    Component: AVL,
-  },
-  {
-    path: "/heap-tree",
-    Component: HeapTree,
-  },
-  {
-    path: "/tree-traversals",
-    Component: TreeTraversals,
+    Component: RootLayout,
+    children: [
+      {
+        path: "/",
+        Component: Home,
+      },
+      {
+        path: "/linear-search",
+        Component: LinearSearch,
+      },
+      {
+        path: "/binary-search",
+        Component: BinarySearch,
+      },
+      {
+        path: "/ternary-search",
+        Component: TernarySearch,
+      },
+      {
+        path: "/jump-search",
+        Component: JumpSearch,
+      },
+      {
+        path: "/split-search",
+        Component: SplitSearch,
+      },
+      {
+        path: "/exponential-search",
+        Component: ExponentialSearch,
+      },
+      {
+        path: "/bubble-sort",
+        Component: BubbleSort,
+      },
+      {
+        path: "/selection-sort",
+        Component: SelectionSort,
+      },
+      {
+        path: "/insertion-sort",
+        Component: InsertionSort,
+      },
+      {
+        path: "/merge-sort",
+        Component: MergeSort,
+      },
+      {
+        path: "/quick-sort",
+        Component: QuickSort,
+      },
+      {
+        path: "/heap-sort",
+        Component: HeapSort,
+      },
+      {
+        path: "/counting-sort",
+        Component: CountingSort,
+      },
+      {
+        path: "/bfs",
+        Component: BFS,
+      },
+      {
+        path: "/dfs",
+        Component: DFS,
+      },
+      {
+        path: "/dijkstra",
+        Component: Dijkstra,
+      },
+      {
+        path: "/bellman-ford",
+        Component: BellmanFord,
+      },
+      {
+        path: "/prims",
+        Component: Prims,
+      },
+      {
+        path: "/kruskals",
+        Component: Kruskals,
+      },
+      {
+        path: "/topological-sort",
+        Component: TopologicalSort,
+      },
+      {
+        path: "/lcs",
+        Component: LCS,
+      },
+      {
+        path: "/mcm",
+        Component: MCM,
+      },
+      {
+        path: "/n-queen",
+        Component: NQueen,
+      },
+      {
+        path: "/knapsack",
+        Component: Knapsack,
+      },
+      {
+        path: "/lis",
+        Component: LIS,
+      },
+      {
+        path: "/coin-change",
+        Component: CoinChange,
+      },
+      {
+        path: "/stack",
+        Component: Stack,
+      },
+      {
+        path: "/queue",
+        Component: Queue,
+      },
+      {
+        path: "/circular-queue",
+        Component: CircularQueue,
+      },
+      {
+        path: "/linked-list",
+        Component: LinkedList,
+      },
+      {
+        path: "/bst",
+        Component: BST,
+      },
+      {
+        path: "/avl",
+        Component: AVL,
+      },
+      {
+        path: "/heap-tree",
+        Component: HeapTree,
+      },
+      {
+        path: "/tree-traversals",
+        Component: TreeTraversals,
+      },
+    ],
   },
 ]);
