@@ -4,6 +4,9 @@ AlgoViz is an interactive algorithm and data structure visualization platform bu
 
 Instead of showing only theory, AlgoViz focuses on step-by-step execution. Users can open a topic, play the simulation, pause it, move forward or backward through important steps, adjust playback speed, and inspect the current state of the algorithm visually.
 
+## Live Preview
+Live Preview at - https://algoviz-phi.vercel.app
+
 ## Project Overview
 
 This project covers a broad set of computer science fundamentals in one interface:
